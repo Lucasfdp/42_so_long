@@ -1,0 +1,8 @@
+https://patorjk.com/software/taag/#p=display&f=Ghost&t=so%20long
+
+check rectangle 
+check walls
+valid chars
+count chars
+has collectibles
+check chars
