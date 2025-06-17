@@ -6,7 +6,7 @@
 /*   By: luferna3 <luferna3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 01:32:52 by luferna3          #+#    #+#             */
-/*   Updated: 2025/06/16 07:48:56 by luferna3         ###   ########.fr       */
+/*   Updated: 2025/06/17 05:26:17 by luferna3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,7 +135,7 @@ int main(int ac, char **av)
 
     load_images(&game);
 
-    if (!game.imgs.wall || !game.imgs.floor || !game.imgs.player/*  || !imgs.exit || !imgs.collect */)
+    if (!game.imgs.wall || !game.imgs.floor || !game.imgs.player || !game.imgs.exit || !game.imgs.collect)
     {
         ft_printf("Error loading images\n");
         return (1);

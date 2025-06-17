@@ -6,7 +6,7 @@
 /*   By: luferna3 <luferna3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/08 03:08:57 by luferna3          #+#    #+#             */
-/*   Updated: 2025/06/16 07:47:16 by luferna3         ###   ########.fr       */
+/*   Updated: 2025/06/17 02:58:53 by luferna3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,30 @@ typedef struct s_map
     int     c_count;
 } t_map;
 
-typedef struct s_img
-{
-    void    *wall;
-    void    *floor;
-    void    *player;
-    void    *exit;
-    void    *collect;
-} t_img;
+// typedef struct s_img
+// {
+//     void    *wall;
+//     void    *floor;
+//     void    *player;
+//     void    *exit;
+//     void    *collect;
+// } t_img;
+
+typedef struct s_img {
+	void	*wall;
+	void	*floor;
+	void	*player;
+	void	*collect;
+	void	*exit;
+
+	int		player_w;
+	int		player_h;
+	int		collect_w;
+	int		collect_h;
+	int		exit_w;
+	int		exit_h;
+	int		tile_size;
+}	t_img;
 
 typedef struct s_game
 {
